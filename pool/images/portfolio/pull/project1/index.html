@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project View Port</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h2 class="logo">Shegs<span>LOLO</span></h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <a href="#" class="btn">Subsrcibe</a>
+      </nav>
+      <div class="content">
+        <h4>My Name is</h4>
+        <h1>George Ademola .O.</h1>
+        <h3>A Frontend Developer!</h3>
+        <img
+          class="image"
+          src="./images/project1.jpg"
+          width="400"
+          height="300"
+        />
+      </div>
+    </div>
+
+    <!-- about -->
+    <div class="about-section">
+      <h1>About Us Page</h1>
+      <p>Some text about who we are and what we do.</p>
+      <p>
+        Resize the browser window to see that this page is responsive by the
+        way.
+      </p>
+    </div>
+    <h2 style="text-align: center">Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="./images/project2.jpg" alt="George" style="width: 100%" />
+
+          <div class="container">
+            <h2>George Ojo</h2>
+            <p class="title">CEO & Founder</p>
+            <p>Some text that describes me so much well.</p>
+            <p>ademola@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="./images/project1.jpg" alt="shegs" style="width: 100%" />
+
+          <div class="container">
+            <h2>Omotola Ojomo</h2>
+            <p class="title">Art Director</p>
+            <p>Some text that describes me so much well.</p>
+            <p>ojomo@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="./images/project3.jpg" alt="George" style="width: 100%" />
+
+          <div class="container">
+            <h2>Ademola O.O</h2>
+            <p class="title">Designer</p>
+            <p>Some text that describes me so much well.</p>
+            <p>ademolamomom@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="container2">
+      <div style="text-align: center">
+        <h2>Contact Us</h2>
+        <p>Leave us a message:</p>
+      </div>
+      <div class="column">
+        <form action="">
+          <label for="fname">Firstname</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name...."
+          />
+          <label for="lname">Lastname</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name...."
+          />
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea
+            name="subject"
+            id="subject"
+            placeholder="Write something.."
+            style="height: 170px"
+          ></textarea>
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
