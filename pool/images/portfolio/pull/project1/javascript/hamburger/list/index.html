@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Create contact page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div style="text-align: center">
+        <h2>Contact Us</h2>
+        <p>Swing by for a cup of coffee, or leave us a message</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img
+            src="./images/project1.jpg"
+            width="100%"
+            width="500"
+            height="400"
+          />
+        </div>
+        <div class="column">
+          <form action="/">
+            <label for="fname">First name</label>
+            <input
+              type="text"
+              id="fname"
+              name="First name"
+              placeholder="Your name..."
+            />
+            <label for="lname">Last name</label>
+            <input
+              type="text"
+              id="lname"
+              name="last name"
+              placeholder="Your last name..."
+            />
+            <label for="Sname">Surname</label>
+            <input
+              type="text"
+              id="Sname"
+              name="Surname"
+              placeholder="Your Surname..."
+            />
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="uk">UK</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea
+              name="Subject"
+              id="subject"
+              placeholder="Write something.."
+              style="height: 170px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
