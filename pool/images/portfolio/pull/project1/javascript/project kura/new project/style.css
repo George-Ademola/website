@@ -321,7 +321,7 @@ form btn2{
     color: #ff004f;
 }
 /* css for tablet */
-#sidemenu   .fas{
+nav   .fas{
     display: none;
   }   
 @media only screen and (max-width: 768px){
@@ -330,6 +330,10 @@ form btn2{
         background-size: contain;
         background-repeat: no-repeat;
         background-position: cover;
+    }
+    .logo{
+        margin-left: 30%;
+    
     }
     .header-text{
         margin-top: 160%;
@@ -344,17 +348,43 @@ form btn2{
     .header-text h1{
         font-size: 40px;
     }
+    #sidemenu{
+        display: flex;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 30px;
+    }
+    .tab-links{
+        font-size: 26px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 20px;
+    }
+
+
     
-     #sidemenu{
+}    
+    /*  #sidemenu{
         display: flex;
         margin-left: 3%;
         justify-content: center;
         align-items: center;
         
-     }
-        .logo{
-            margin-left: 38%;
-        }
+     } */
+        
         
         
         
@@ -387,7 +417,7 @@ form btn2{
         top: 25px;
         left: 25px;
         cursor: pointer;
-    }  */
+    } 
     .sub-title{
         font-size: 40px;
     }
@@ -411,10 +441,10 @@ form btn2{
         font-size: 20px;
     }
 
-}
 
 
 
+ 
 /* css for small screen */
 nav .fas{
     display: none;
@@ -427,9 +457,13 @@ nav .fas{
         background-position: cover;
 
     }
+    .logo{
+        margin-left: -5%;
+        width: 180px;
+    }
     .header-text{
-        margin-top: 160%;
-        font-size: 16px;
+        margin-top: 170%;
+        font-size: 26px;
        
     }
     .header-text p{
@@ -442,7 +476,7 @@ nav .fas{
     }
     nav .fas{
         display: block;
-        font-size: 25px;
+        font-size: 35px;
         color: #fff;
     }   
     nav ul{
