@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/93e9b8b439.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>New project Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/jjgeorge-logos_white.png" class="logo" />
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>A <span>Frontend</span> Developer</p>
+          <h1>
+            Hi, I'm <span>George</span><br />
+            Ademola From Nigeria.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- about me -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/portriat.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, l'm George Ademola. From Ondo, Nigeria. l graduated from the
+              Nigerian Meteorological Training Institue at about 3 years ago,
+              and Have served in the military for about 8years. Currently am
+              learning to code!, l love playing guitar, keyboard and my
+              favourite sport is football and basketball.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span><br />Designing Web Pages</li>
+                <li>
+                  <span>CSS</span><br />
+                  Styling
+                </li>
+                <li>
+                  <span>Web Development</span><br />
+                  Building Web
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023</span><br />Learning to Code</li>
+                <li>
+                  <span>2017-2019</span><br />
+                  (NIMET)Nigerian Meteorological Agency
+                </li>
+                <li>
+                  <span>2014-2022</span><br />
+                  Military experiences
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>WEAPON</span><br />Skilled on Weapon</li>
+                <li>
+                  <span>Web DEVELOPMENT</span><br />
+                  Building Web/App
+                </li>
+                <li>
+                  <span>INSTRUMENT</span><br />
+                  Making live Music/playing instrument
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I'm into building website from scratch to the best you can always
+              think of, and giving you the best you actually want and need!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2></h2>
+            <p>
+              I'm into designing web pages from Scratch to top.making all things
+              easier! l love what am doing so much and its gives me much joy in
+              heart. I really dont want to quit!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-apple-whole"></i>
+            <h2>APP Design</h2>
+            <p>
+              Application design has always been what l love doing for a long
+              while. and its been my dream for a long period of time, getting to
+              achieve this dream to me am so honored to be part of this
+              accomplishment.!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Making of social media app has been my goal, gettting to learn
+                how its works is so much good and for me as a developer. one of
+                the challenges l love is trying new things.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The idea of using a live instrument is so much good, but using
+                your mobile phone to make music is so much fun. Comfortability
+                at your hand. You only need a mobile phone.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The whole idea of making a working online app is to make things
+                comfortable for everyone at there own comfort zone, whether you
+                at home, office, or schools. A very trust and relaible way of
+                getting stuffs online.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn2">See more</a>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-bolt"></i>ademolaomotolaojomo@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>09048226240</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/georgeshegs.ademola"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="http://www.twitter.com/OOAdemola"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="http://www.instagram.com/george_gegg"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@jjgeorgefleek?_t=8aYza6J6KrW&_r=1"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </div>
+            <!-- <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a> -->
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; @ George.<i class="fa-solid fa-heart"></i> Ademola codes
+          copycat
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzgTDGyAAuikmu1JPJ8Bn_euExQpRAiFiyDOZ4F3al46MR_Knmbzg4y97H586DZFQ7d/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Sucessfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
