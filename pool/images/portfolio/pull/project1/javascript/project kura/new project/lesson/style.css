@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/jjgeorge-logos_transparent.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+.container{
+    padding: 10px 25px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 35px;
+}
+nav ul li a{
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    text-transform: capitalize;
+    position: relative;
+}
+nav ul li a::after{
+      content: '';
+      background-color: #ff004f;
+      width: 0;
+      height: 3px;
+      transition: 0.3s;
+      left: 0;
+      bottom: -6px;
+      position: absolute;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    padding-left: 10%;
+}
+h1{
+    font-size: 90px;
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 30px;
+}
+p{
+    font-size: 23px;
+}
+.logo{
+    color: #ff004f;
+    font-size: 30px;
+}
+/* about */
+#about{
+    background-color: #000;
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+
+
+/* css for small screen */
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 576px){
+    #header{
+        background-image: url(images/jjgeorge-logos_transparent.png);
+        background-position: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .logo img{
+        width: 15%;
+        
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .header-text{
+        margin-top: 45%;
+        padding-left: 2%;
+    }
+    h1{
+        font-size: 25px;
+        margin: 5%;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 12px;
+    }
+    p{
+        font-size: 12px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 20px;
+        color: #000;
+    }
+    nav ul{
+       position: fixed;
+       background: #ff004f;
+       height: 100vh;
+       top: 0;
+       right: -200px;
+       width: 200px;
+       padding-top: 50px;
+       z-index: 2;
+       transition: 0.3s;
+    }
+    nav  ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 24px;
+    }
+
+}

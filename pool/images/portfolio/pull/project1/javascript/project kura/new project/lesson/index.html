@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/93e9b8b439.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Navigation bar for small screen</title>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h2 class="logo">TEDDY <img src="images/toys.png" /></h2>
+
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>DESIGN</h1>
+          <h3>I'm TEDDY ROLO</h3>
+          <h4>Making Design is always my passion.</h4>
+          <p>I so much love it and its making me want to do.</p>
+          <p>more and more each day thats passes.!!!!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/george.jpg" alt="george" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="h1">About Me</h1>
+            <p>
+              I love teddy so much that l can spend the money l have to get more
+              teddies and for my baby girl she love it too.!
+            </p>
+            <ul>
+              <p>Various things I love;</p>
+              <li>I love my Mom</li>
+              <li>I love my family</li>
+              <li>My Friends</li>
+              <li>My Guitar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- design -->
+    <div id="design">
+      <div class="container"></div>
+    </div>
+  </body>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+</html>

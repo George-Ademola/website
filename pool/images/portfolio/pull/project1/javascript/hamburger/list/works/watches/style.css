@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/jjgeorge-logos_black.png);
+    background-position: cover;
+    background-size: center;
+}
+.container{
+    padding: 10px 25px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    font-size: 35px;
+    font-family: 300;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 25px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    position: relative;
+}
+nav ul li a::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    background-color: #ff004f;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    padding: 10%;
+    
+    color: #4c9e9e;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header-text-1{
+    flex-basis: 35%;
+}
+.header-text-1 h1{
+    font-size: 50px;
+}
+.header-text-2{
+    flex-basis: 60%;
+}
+.header-text-2 img{
+   
+    width: 25%;
+}
+/* about me */
+#about{
+    padding: 70px 0;
+    background: #4c9e9e;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 18px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+
+/* design */
+#design{
+    padding: 30px 0;
+}
+.design-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+}
+.design-list div{
+    background: teal;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.design-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.design-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.design-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.design-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+
+}
+/* portfolio */
+#portfolio{
+    padding: 70px 20px;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background: teal;
+}
+/* contact */
+#contact{
+    margin: 50px;
+    background: #000;
+}
+.contact-right{
+    flex-basis: 100%;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+/* css for small phones */
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 576px){
+    #header{
+        background-image: url(images/jjgeorge-logos_black.png);
+        background-position: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    nav .fas{
+        display: block;
+    }
+}
